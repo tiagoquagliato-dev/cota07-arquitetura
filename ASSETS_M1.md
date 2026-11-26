@@ -19,9 +19,9 @@ Todos os **13/13 assets arquitetônicos definitivos** estão integrados e conver
 | Casa Pátio | `patio-jardim` | `4:5` | `1200 x 1500` | `640w`, `1200w` | `50% 45%` | Gemini |
 | Casa Pátio | `patio-interior` | `16:9` | `1920 x 1080` | `640w`, `1280w`, `1920w` | `50% 50%` | Gemini |
 | Apartamento Matéria | `materia-estar` | `16:9` | `1920 x 1080` | `640w`, `1280w`, `1920w` | `55% 45%` | Gemini |
-| Apartamento Matéria | `materia-cozinha` | `4:3` | `1600 x 1200` | `640w`, `1280w`, `1600w` | `50% 55%` | Gemini |
-| Apartamento Matéria | `materia-detalhe` | `4:5` | `1200 x 1500` | `640w`, `1200w` | `50% 50%` | Gemini |
-| Pavilhão Sete | `pavilhao-exterior` | `16:9` | `1920 x 1080` | `640w`, `1280w`, `1920w` | `58% 45%` | Gemini |
+| Apartamento Matéria | `materia-cozinha` | `4:3` | `1200 x 900` | `640w`, `1200w` | `50% 55%` | Gemini |
+| Apartamento Matéria | `materia-detalhe` | `4:5` | `896 x 1120` | `640w`, `896w` | `50% 50%` | Gemini |
+| Pavilhão Sete | `pavilhao-exterior` | `16:9` | `1376 x 774` | `640w`, `1376w` | `58% 45%` | Gemini |
 | Pavilhão Sete | `pavilhao-interior` | `16:9` | `1920 x 1080` | `640w`, `1280w`, `1920w` | `50% 45%` | ChatGPT |
 | Pavilhão Sete | `pavilhao-detalhe` | `4:5` | `1200 x 1500` | `640w`, `1200w` | `50% 50%` | ChatGPT |
 | Institucional | `studio-editorial` | `4:3` | `1600 x 1200` | `640w`, `1280w`, `1600w` | `45% 50%` | ChatGPT |
