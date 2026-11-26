@@ -1,0 +1,454 @@
+{
+  "routes": {
+    "/": {
+      "status": "ok",
+      "h1": "Arquitetura além da forma."
+    },
+    "/projetos": {
+      "status": "ok",
+      "h1": "Projetos"
+    },
+    "/projetos/casa-horizonte": {
+      "status": "ok",
+      "h1": "Casa Horizonte"
+    },
+    "/projetos/casa-patio": {
+      "status": "ok",
+      "h1": "Casa Pátio"
+    },
+    "/projetos/apartamento-materia": {
+      "status": "ok",
+      "h1": "Apartamento Matéria"
+    },
+    "/projetos/pavilhao-sete": {
+      "status": "ok",
+      "h1": "Pavilhão Sete"
+    },
+    "/estudio": {
+      "status": "ok",
+      "h1": "Pensar. Desenhar. Transformar."
+    },
+    "/metodo": {
+      "status": "ok",
+      "h1": "Da primeira linha ao espaço."
+    },
+    "/contato": {
+      "status": "ok",
+      "h1": "Iniciar um projeto."
+    },
+    "/privacidade": {
+      "status": "ok",
+      "h1": "Política de privacidade"
+    },
+    "/rota-404-teste": {
+      "status": "ok",
+      "h1": "Rota fora do plano."
+    }
+  },
+  "widthsOverflow": {
+    "360": {
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "hasOverflow": false
+    },
+    "390": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "hasOverflow": false
+    },
+    "768": {
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "hasOverflow": false
+    },
+    "1024": {
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "hasOverflow": false
+    },
+    "1440": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "hasOverflow": false
+    },
+    "1920": {
+      "scrollWidth": 1920,
+      "clientWidth": 1920,
+      "hasOverflow": false
+    }
+  },
+  "filtersAndView": {
+    "residencialCount": 2,
+    "listUrl": "http://127.0.0.1:4173/projetos?vista=lista"
+  },
+  "gallery": {
+    "opened": true,
+    "advancedWithArrowRight": true,
+    "closedWithEscape": true
+  },
+  "briefing": {
+    "completedFourSteps": true
+  },
+  "mobileMenu": {
+    "opened": true,
+    "bodyScrollLocked": true,
+    "closedOnEscape": true
+  },
+  "keyboard": {
+    "tabMovedFocusTo": "A"
+  },
+  "images": [
+    {
+      "route": "/",
+      "alt": "Fachada panorâmica da Casa Horizonte com",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "naturalWidth": 1440,
+      "naturalHeight": 810,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "alt": "Fachada panorâmica da Casa Horizonte com",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "naturalWidth": 792,
+      "naturalHeight": 445,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "alt": "Volume em concreto e pedra natural da Ca",
+      "currentSrc": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "naturalWidth": 792,
+      "naturalHeight": 594,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "alt": "Sala de estar do Apartamento Matéria com",
+      "currentSrc": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "naturalWidth": 792,
+      "naturalHeight": 445,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "alt": "Fachada do Pavilhão Sete com pórticos rí",
+      "currentSrc": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "naturalWidth": 792,
+      "naturalHeight": 445,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "alt": "Mesa de trabalho do estúdio com amostras",
+      "currentSrc": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "naturalWidth": 691,
+      "naturalHeight": 518,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/projetos/casa-horizonte",
+      "alt": "Fachada panorâmica da Casa Horizonte com",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "naturalWidth": 1440,
+      "naturalHeight": 810,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/projetos/casa-horizonte",
+      "alt": "Fachada panorâmica da Casa Horizonte com",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "naturalWidth": 446,
+      "naturalHeight": 251,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/projetos/casa-horizonte",
+      "alt": "Sala de estar integrada da Casa Horizont",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-interior-640.webp",
+      "naturalWidth": 446,
+      "naturalHeight": 251,
+      "opacity": "1",
+      "visible": true
+    },
+    {
+      "route": "/projetos/casa-horizonte",
+      "alt": "Área da piscina da Casa Horizonte revest",
+      "currentSrc": "http://127.0.0.1:4173/images/horizonte-piscina-640.webp",
+      "naturalWidth": 446,
+      "naturalHeight": 334,
+      "opacity": "1",
+      "visible": true
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "imageResponsesCount": 107,
+  "invalidImageResponses": [
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-640.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/patio-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/materia-estar-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/pavilhao-exterior-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/horizonte-exterior-1920.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4173/images/studio-editorial-1280.webp",
+      "status": 304
+    }
+  ]
+}
