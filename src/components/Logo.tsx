@@ -1,31 +1,30 @@
 interface LogoProps {
   tone?: 'light' | 'dark';
+  accentColor?: string;
   className?: string;
 }
 
-export function Logo({ tone = 'dark', className = '' }: LogoProps) {
-  const strokeColor = tone === 'light' ? '#EAE8E1' : '#191B1A';
+export function Logo({ tone = 'dark', accentColor = '#6E7458', className = '' }: LogoProps) {
+  const strokeColor = tone === 'light' ? '#F2EFE9' : '#191B1A';
   const textColor = tone === 'light' ? '#FFFFFF' : '#191B1A';
-  const accentColor = '#787D60';
 
   return (
     <span className={`inline-flex items-center gap-2.5 select-none ${className}`}>
       <svg
-        width="26"
-        height="22"
-        viewBox="0 0 26 22"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         className="shrink-0"
       >
-        <path d="M1 4V18M25 4V18M1 11H25" stroke={strokeColor} strokeWidth="1.25" />
-        <path d="M1 4L4 1M25 4L22 1M1 18L4 21M25 18L22 21" stroke={strokeColor} strokeWidth="1.1" />
-        <rect x="9.5" y="7.5" width="7" height="7" stroke={accentColor} strokeWidth="1.5" />
-        <circle cx="13" cy="11" r="1.25" fill={strokeColor} />
+        <circle cx="12" cy="12" r="9.5" stroke={strokeColor} strokeWidth="1.25" />
+        <path d="M12 2.5V21.5M2.5 12H21.5" stroke={strokeColor} strokeWidth="1" strokeOpacity="0.45" />
+        <circle cx="12" cy="12" r="3" fill={accentColor} />
       </svg>
       <span
-        className="font-display text-base sm:text-lg font-semibold tracking-[0.14em] uppercase leading-none"
+        className="font-display text-base sm:text-lg font-semibold tracking-[-0.02em] leading-none"
         style={{ color: textColor }}
       >
         COTA<span style={{ color: accentColor }}>.</span>07

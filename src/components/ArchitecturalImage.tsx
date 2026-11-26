@@ -27,6 +27,7 @@ export function ArchitecturalImage({
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}
         fetchPriority={priority ? 'high' : 'auto'}
+        style={image.focalPoint ? { objectPosition: image.focalPoint } : undefined}
         className={`w-full h-full object-cover ${imgClassName}`}
       />
     </div>

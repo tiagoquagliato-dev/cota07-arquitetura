@@ -2,25 +2,23 @@
 
 @theme {
   --color-carbono: #191B1A;
+  --color-alabaster: #F2EFE9;
   --color-concreto: #EAE8E1;
   --color-cimento: #96978F;
-  --color-oliva: #787D60;
+  --color-oliva: #6E7458;
   --color-branco: #FFFFFF;
 
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
 :root {
-  --bg-primary: #EAE8E1;
+  --bg-primary: #F2EFE9;
   --bg-dark: #191B1A;
   --text-primary: #191B1A;
   --text-muted: #5C5E57;
-  --text-cimento: #96978F;
-  --accent-oliva: #787D60;
-  --line-light: rgba(25, 27, 26, 0.14);
-  --line-dark: rgba(234, 232, 225, 0.16);
+  --accent-active: #6E7458;
 }
 
 html {
@@ -55,30 +53,11 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* Editorial hairlines */
-.hairline-t {
-  border-top: 1px solid var(--line-light);
-}
-
-.hairline-b {
-  border-bottom: 1px solid var(--line-light);
-}
-
-.hairline-dark-t {
-  border-top: 1px solid var(--line-dark);
-}
-
-.hairline-dark-b {
-  border-bottom: 1px solid var(--line-dark);
-}
-
-/* Focus visibility for keyboard navigation */
 :focus-visible {
-  outline: 2px solid #787D60;
+  outline: 2px solid #6E7458;
   outline-offset: 3px;
 }
 
-/* Ensure images never collapse or distort */
 img {
   display: block;
   max-width: 100%;

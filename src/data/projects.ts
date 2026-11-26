@@ -7,6 +7,7 @@ export interface ProjectImage {
   aspect: '16/9' | '4/3' | '4/5';
   width: number;
   height: number;
+  focalPoint?: string;
 }
 
 export interface ProjectItem {
@@ -17,6 +18,7 @@ export interface ProjectItem {
   category: ProjectCategory;
   categoryLabel: string;
   area: string;
+  accentColor: string;
   shortDescription: string;
   architecturalDescription: string[];
   materials: string[];
@@ -37,6 +39,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'residencial',
     categoryLabel: 'Residencial',
     area: '420 m²',
+    accentColor: '#6E7458',
     shortDescription:
       'Residência horizontal em concreto aparente e madeira natural aberta para a paisagem tropical e lâmina de água.',
     architecturalDescription: [
@@ -62,6 +65,7 @@ export const PROJECTS: ProjectItem[] = [
       aspect: '16/9',
       width: 1920,
       height: 1080,
+      focalPoint: '60% 45%',
     },
     gallery: [
       {
@@ -98,6 +102,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'residencial',
     categoryLabel: 'Residencial',
     area: '310 m²',
+    accentColor: '#8C6D53',
     shortDescription:
       'Residência introspectiva organizada ao redor de um jardim central com árvore escultural, pedra natural e luz filtrada.',
     architecturalDescription: [
@@ -123,6 +128,7 @@ export const PROJECTS: ProjectItem[] = [
       aspect: '4/3',
       width: 1600,
       height: 1200,
+      focalPoint: '50% 40%',
     },
     gallery: [
       {
@@ -159,6 +165,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'interiores',
     categoryLabel: 'Interiores',
     area: '180 m²',
+    accentColor: '#737670',
     shortDescription:
       'Interiores de alto padrão que equilibram estrutura bruta, marcenaria em madeira natural, tecidos crus e luz difusa.',
     architecturalDescription: [
@@ -184,6 +191,7 @@ export const PROJECTS: ProjectItem[] = [
       aspect: '16/9',
       width: 1920,
       height: 1080,
+      focalPoint: '55% 45%',
     },
     gallery: [
       {
@@ -220,6 +228,7 @@ export const PROJECTS: ProjectItem[] = [
     category: 'comercial',
     categoryLabel: 'Comercial',
     area: '560 m²',
+    accentColor: '#4C5D5E',
     shortDescription:
       'Edifício comercial contemporâneo com pórtico estrutural aparente, transparência térrea e áreas de convivência.',
     architecturalDescription: [
@@ -245,6 +254,7 @@ export const PROJECTS: ProjectItem[] = [
       aspect: '16/9',
       width: 1920,
       height: 1080,
+      focalPoint: '58% 45%',
     },
     gallery: [
       {
@@ -282,6 +292,7 @@ export const STUDIO_IMAGE: ProjectImage = {
   aspect: '4/3',
   width: 1600,
   height: 1200,
+  focalPoint: '45% 50%',
 };
 
 export function getImageSrc(id: string, size: 640 | 1280 | 1920 = 1280): string {
