@@ -1,13 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Expand } from 'lucide-react';
 import { ArchitecturalImage } from '../components/ArchitecturalImage';
 import { FullscreenGallery } from '../components/FullscreenGallery';
 import { PROJECTS } from '../data/projects';
+import { runEditorialMotion } from '../utils/motion';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const [galleryIndex, setGalleryIndex] = useState<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let cleanup: (() => void) | undefined;
+    void runEditorialMotion(containerRef.current).then((fn) => {
+      cleanup = fn;
+    });
+    return () => {
+      cleanup?.();
+    };
+  }, [slug]);
 
   const projectIndex = PROJECTS.findIndex((p) => p.slug === slug);
   const project = projectIndex >= 0 ? PROJECTS[projectIndex] : null;
@@ -36,7 +48,7 @@ export default function ProjectDetailPage() {
   const nextProject = PROJECTS[(projectIndex + 1) % PROJECTS.length];
 
   return (
-    <div className="bg-[#F2EFE9] text-[#191B1A] pt-28 sm:pt-36 pb-28">
+    <div ref={containerRef} className="bg-[#F2EFE9] text-[#191B1A] pt-28 sm:pt-36 pb-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12 space-y-16">
         <div>
           <Link
@@ -75,6 +87,7 @@ export default function ProjectDetailPage() {
             image={project.heroImage}
             sizes="100vw"
             priority
+            scrollScale
             className="aspect-[16/9]"
           />
           <span className="mt-3 inline-flex items-center gap-2 text-xs text-[#5C5E57] group-hover:text-[#191B1A] transition-colors">

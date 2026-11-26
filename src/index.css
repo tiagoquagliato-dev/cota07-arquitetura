@@ -62,3 +62,22 @@ img {
   display: block;
   max-width: 100%;
 }
+
+@keyframes explorerScaleReveal {
+  from {
+    transform: scale(1.045);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}
+
+.explorer-photo-enter {
+  animation: explorerScaleReveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explorer-photo-enter {
+    animation: none;
+  }
+}

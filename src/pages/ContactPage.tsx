@@ -41,16 +41,23 @@ export default function ContactPage() {
     setConfirmed(false);
   };
 
-  const progressPercent = confirmed ? 100 : (step / 4) * 100;
+  const completedCount =
+    (projectType ? 1 : 0) + (areaRange ? 1 : 0) + (styleChoice ? 1 : 0) + (confirmed ? 1 : 0);
+  const progressPercent = confirmed ? 100 : Math.min(75, Math.max(0, (step - 1) * 25 + (completedCount >= step ? 25 : 0)));
 
   return (
     <div className="bg-[#F2EFE9] text-[#191B1A] pt-32 sm:pt-40 pb-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="max-w-3xl mx-auto space-y-12">
           <header className="space-y-4">
-            <p className="text-sm font-medium text-[#6E7458]">
-              Briefing Demonstrativo · Etapa 0{step} de 04
-            </p>
+            <div className="flex items-center justify-between gap-4">
+              <p className="text-sm font-medium text-[#6E7458]">
+                Briefing Demonstrativo · Etapa 0{step} de 04
+              </p>
+              <span className="font-mono-tech text-xs text-[#5C5E57]">
+                {progressPercent}%
+              </span>
+            </div>
             <h1 className="font-display text-4xl sm:text-6xl font-semibold tracking-[-0.035em] leading-[0.96]">
               Iniciar um projeto.
             </h1>
@@ -60,7 +67,14 @@ export default function ContactPage() {
             </p>
 
             {/* Barra de progresso contínua */}
-            <div className="h-1 w-full bg-[#E5E1D8] rounded-full overflow-hidden">
+            <div
+              role="progressbar"
+              aria-label="Progresso do briefing demonstrativo"
+              aria-valuenow={progressPercent}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              className="h-1.5 w-full bg-[#E5E1D8] rounded-full overflow-hidden"
+            >
               <div
                 className="h-full bg-[#6E7458] transition-all duration-500"
                 style={{ width: `${progressPercent}%` }}

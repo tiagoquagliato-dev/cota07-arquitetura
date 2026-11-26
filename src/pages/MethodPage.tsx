@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
+import { ArchitecturalImage } from '../components/ArchitecturalImage';
+import { PROJECTS } from '../data/projects';
 
 const STAGES = [
   {
@@ -7,24 +9,28 @@ const STAGES = [
     title: 'Escuta',
     summary:
       'Leitura inicial das necessidades espaciais, rotina de uso, orientações solares e condicionantes do entorno.',
+    image: PROJECTS[0].gallery[1],
   },
   {
     num: '02',
     title: 'Conceito',
     summary:
       'Definição do partido arquitetônico, implantação no terreno, relações de cheio e vazio e estratégia de iluminação natural.',
+    image: PROJECTS[1].gallery[2],
   },
   {
     num: '03',
     title: 'Desenvolvimento',
     summary:
       'Evolução das plantas conceituais, cortes esquemáticos e proporções entre estrutura, vedações e aberturas.',
+    image: PROJECTS[3].gallery[1],
   },
   {
     num: '04',
     title: 'Detalhamento',
     summary:
       'Aprofundamento conceitual de marcenaria, encontros de materiais, paginações e leitura tátil das superfícies.',
+    image: PROJECTS[2].gallery[2],
   },
 ];
 
@@ -45,27 +51,37 @@ export default function MethodPage() {
           </p>
         </header>
 
-        {/* Sequência visual contínua */}
-        <section className="space-y-16">
+        {/* Sequência visual contínua com fotografia integrada */}
+        <section className="space-y-20">
           {STAGES.map((stage, idx) => (
             <div
               key={stage.num}
-              className={`grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline ${
-                idx % 2 === 1 ? 'lg:pl-16' : ''
-              }`}
+              className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
             >
-              <div className="lg:col-span-2">
-                <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#E5E1D8] font-mono-tech text-xs">
-                  {stage.num}
-                </span>
-              </div>
-              <div className="lg:col-span-4">
-                <h2 className="font-display text-3xl sm:text-4xl font-medium">{stage.title}</h2>
-              </div>
-              <div className="lg:col-span-6">
+              <div
+                className={`lg:col-span-5 space-y-4 ${
+                  idx % 2 === 1 ? 'lg:order-2 lg:col-start-8' : 'lg:col-start-1'
+                }`}
+              >
+                <span className="font-mono-tech text-xs text-[#6E7458]">{stage.num}</span>
+                <h2 className="font-display text-3xl sm:text-5xl font-semibold tracking-tight">
+                  {stage.title}
+                </h2>
                 <p className="text-base sm:text-lg text-[#3D3F3B] leading-relaxed">
                   {stage.summary}
                 </p>
+              </div>
+
+              <div
+                className={`lg:col-span-6 ${
+                  idx % 2 === 1 ? 'lg:order-1 lg:col-start-1' : 'lg:col-start-7'
+                }`}
+              >
+                <ArchitecturalImage
+                  image={stage.image}
+                  sizes="(min-width: 1024px) 48vw, 100vw"
+                  className="aspect-[16/10]"
+                />
               </div>
             </div>
           ))}

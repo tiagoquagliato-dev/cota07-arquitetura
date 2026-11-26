@@ -60,10 +60,10 @@ export function Header() {
           <Link
             to="/"
             aria-label="COTA.07 Arquitetura e Interiores, página inicial"
-            className={`pointer-events-auto px-4 py-2.5 rounded-full transition-colors duration-300 ${
+            className={`pointer-events-auto px-4 py-2.5 rounded-full transition-colors duration-300 backdrop-blur-md ${
               useLightTone
-                ? 'bg-[#191B1A]/65 text-[#FFFFFF]'
-                : 'bg-[#F2EFE9]/90 text-[#191B1A] shadow-[0_2px_16px_rgba(25,27,26,0.06)]'
+                ? 'bg-[#191B1A]/75 text-[#FFFFFF] border border-[#F2EFE9]/15'
+                : 'bg-[#F2EFE9]/95 text-[#191B1A] border border-[#191B1A]/10 shadow-[0_4px_20px_rgba(25,27,26,0.08)]'
             }`}
           >
             <Logo tone={useLightTone ? 'light' : 'dark'} />
@@ -71,10 +71,10 @@ export function Header() {
 
           <nav
             aria-label="Navegação flutuante"
-            className={`pointer-events-auto hidden md:flex items-center gap-1 px-2.5 py-2 rounded-full transition-colors duration-300 ${
+            className={`pointer-events-auto hidden md:flex items-center gap-1 px-2.5 py-2 rounded-full transition-colors duration-300 backdrop-blur-md ${
               useLightTone
-                ? 'bg-[#191B1A]/65 text-[#F2EFE9]'
-                : 'bg-[#F2EFE9]/90 text-[#191B1A] shadow-[0_2px_16px_rgba(25,27,26,0.06)]'
+                ? 'bg-[#191B1A]/75 text-[#F2EFE9] border border-[#F2EFE9]/15'
+                : 'bg-[#F2EFE9]/95 text-[#191B1A] border border-[#191B1A]/10 shadow-[0_4px_20px_rgba(25,27,26,0.08)]'
             }`}
           >
             {NAV_ITEMS.map((item) => (
