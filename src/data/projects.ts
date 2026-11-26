@@ -295,10 +295,20 @@ export const STUDIO_IMAGE: ProjectImage = {
   focalPoint: '45% 50%',
 };
 
-export function getImageSrc(id: string, size: 640 | 1280 | 1920 = 1280): string {
-  return `/images/${id}-${size}.webp`;
+export function getImageWidths(maxWidth = 1920): number[] {
+  if (maxWidth >= 1920) return [640, 1280, 1920];
+  if (maxWidth >= 1600) return [640, 1280, 1600];
+  return [640, maxWidth];
 }
 
-export function getImageSrcSet(id: string): string {
-  return `/images/${id}-640.webp 640w, /images/${id}-1280.webp 1280w, /images/${id}-1920.webp 1920w`;
+export function getImageSrc(id: string, preferredWidth = 1280, maxWidth = 1920): string {
+  const widths = getImageWidths(maxWidth);
+  const chosen = widths.find((w) => w >= preferredWidth) ?? widths[widths.length - 1];
+  return `/images/${id}-${chosen}.webp`;
+}
+
+export function getImageSrcSet(id: string, maxWidth = 1920): string {
+  return getImageWidths(maxWidth)
+    .map((w) => `/images/${id}-${w}.webp ${w}w`)
+    .join(', ');
 }

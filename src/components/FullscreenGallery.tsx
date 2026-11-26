@@ -99,8 +99,8 @@ export function FullscreenGallery({
 
         <figure className="max-h-full max-w-5xl w-full h-full flex flex-col items-center justify-center gap-3 min-h-0">
           <img
-            src={getImageSrc(activeImage.id, 1920)}
-            srcSet={getImageSrcSet(activeImage.id)}
+            src={getImageSrc(activeImage.id, 1920, activeImage.width)}
+            srcSet={getImageSrcSet(activeImage.id, activeImage.width)}
             sizes="100vw"
             width={activeImage.width}
             height={activeImage.height}

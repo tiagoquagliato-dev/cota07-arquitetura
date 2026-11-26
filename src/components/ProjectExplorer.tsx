@@ -36,8 +36,8 @@ export function ProjectExplorer() {
       <div className="absolute inset-0">
         <img
           key={activeProject.id}
-          src={getImageSrc(activeProject.heroImage.id, 1280)}
-          srcSet={getImageSrcSet(activeProject.heroImage.id)}
+          src={getImageSrc(activeProject.heroImage.id, 1280, activeProject.heroImage.width)}
+          srcSet={getImageSrcSet(activeProject.heroImage.id, activeProject.heroImage.width)}
           sizes="100vw"
           width={activeProject.heroImage.width}
           height={activeProject.heroImage.height}

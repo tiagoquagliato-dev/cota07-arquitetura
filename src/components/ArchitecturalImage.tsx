@@ -29,8 +29,8 @@ export function ArchitecturalImage({
       data-parallax={parallax !== undefined ? String(parallax) : undefined}
     >
       <img
-        src={getImageSrc(image.id, priority ? 1280 : 640)}
-        srcSet={getImageSrcSet(image.id)}
+        src={getImageSrc(image.id, priority ? 1280 : 640, image.width)}
+        srcSet={getImageSrcSet(image.id, image.width)}
         sizes={sizes}
         width={image.width}
         height={image.height}
